@@ -1,0 +1,34 @@
+.main {
+}
+
+th {
+    height: 60px;
+    font-size: 2.4rem;
+}
+
+td {
+    height: 40px;
+    font-size: 1.6rem;
+    padding: 0 20px;
+}
+
+#toast {
+    display: none;
+    position: fixed;
+    width: 100%;
+    max-width: 800px;
+    background-color: aquamarine;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+
+.activeToast {
+    display: block !important;
+}
+
+.toastContainer {
+    padding: 10px 30px;
+    font-size: 1.6rem;
+}

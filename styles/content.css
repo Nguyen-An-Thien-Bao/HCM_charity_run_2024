@@ -1,0 +1,196 @@
+.content {
+}
+
+.gallery-section {
+    margin: 50px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 50px;
+}
+
+.about-section {
+    background-color: var(--bg-color--);
+    padding: 50px 0;
+}
+
+.about-section-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    text-align: center;
+}
+
+.about-section-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.about-section-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+.about-section-logo {
+    width: 100%;
+}
+
+.about-section-title {
+    margin: 40px 0 20px 0;
+    font-size: 1.5rem;
+}
+
+.about-section-desc {
+    width: 68%;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    text-align: justify;
+    color: black;
+    line-height: 2rem;
+}
+
+.section-box {
+    margin: 50px 0;
+    background-color: var(--bg-color--);
+    padding: 50px 30px;
+}
+
+.section-lable {
+    font-size: 2.5rem;
+}
+
+.section-content {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.section-slogan {
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* mansory layout */
+.gallery-img-container {
+    width: 100%;
+    margin: 0 auto;
+    columns: 3;
+    column-gap: 40px;
+    margin: 50px 0;
+}
+
+.box {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.box__img {
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.gallery__loading-btn {
+    position: relative;
+    left: -42%;
+    transform: translateX(-100%);
+    display: block;
+    margin-top: 50px;
+    width: 12em;
+    height: 3em;
+    text-transform: capitalize;
+    font-weight: bold;
+    background-color: var(--black-color--);
+    color: var(--white-color--);
+    border: none;
+    transition: opacity 0.5s;
+}
+
+.footer__icon:hover,
+.inp__section-btn:hover,
+.gallery__loading-btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+/* mansory layout */
+
+/* input-section */
+.input-section {
+    margin: 50px auto;
+}
+
+.inp__container {
+    margin-top: 40px;
+}
+
+.lable__inp {
+    display: block;
+    text-transform: capitalize;
+    font-size: 1.35rem;
+    color: var(--text-color--);
+}
+
+.inp {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: solid var(--text-color--) 1px;
+    line-height: 3rem;
+    font-size: 1.5rem;
+}
+
+.inp:focus {
+    border-bottom-color: var(--black-color--);
+}
+
+.inp-comment {
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    resize: none;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    outline: none;
+}
+
+.inp-comment:focus {
+    outline-color: var(--black-color--);
+}
+
+.inp__section-btn {
+    display: block;
+    width: 10em;
+    height: 2em;
+    border: solid 1px var(--black-color--);
+    background-color: var(--black-color--);
+    color: var(--white-color--);
+    transition: opacity 0.5s;
+}
+
+/* input-section */
+
+@media screen and (max-width: 992px) {
+    .gallery-img-container {
+        columns: 2;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .gallery-img-container {
+        columns: 1;
+    }
+
+    .about-section-box {
+        display: flex;
+        flex-direction: column;
+    }
+}

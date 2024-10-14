@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+        <link rel="stylesheet" href="./styles/header.css" />
+        <link rel="stylesheet" href="./styles/slider.css" />
+        <link rel="stylesheet" href="./styles/content.css" />
+        <link rel="stylesheet" href="./styles/footer.css" />
+        <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="./styles/base.css" />
+        <title>Home | HCM Charity Runner 2024</title>
+    </head>
+    <body>
+        <div id="main" class="grid">
+            <header class="header">
+                <div class="logo-container">
+                    <img src="./images/logo.png" alt="" class="logo-img" />
+                </div>
+                <nav class="nav-container">
+                    <span id="menu" class="menu-btn uil uil-bars"></span>
+                    <ul id="nav" class="nav-list">
+                        <li class="nav--list--items">
+                            <a href="./index.html" class="nav--list--items--links">Home</a>
+                        </li>
+                        <li class="nav--list--items">
+                            <a href="./programEvents.html" class="nav--list--items--links">Program Events</a>
+                        </li>
+                        <li class="nav--list--items">
+                            <a href="./generalInformation.html" class="nav--list--items--links">General Information</a>
+                        </li>
+                        <li class="nav--list--items">
+                            <a href="./participant.html" class="nav--list--items--links">Participants</a>
+                        </li>
+                        <li class="nav--list--items">
+                            <a href="./about.html" class="nav--list--items--links">About Us</a>
+                        </li>
+                        <li class="nav--list--items">
+                            <a href="./inquiry.html" class="nav--list--items--links nav_active">Inquiry</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="slider">
+                <img src="./images/hero.jpg" alt="" class="slider-img" />
+
+                <div class="slider-box">
+                    <div class="slider-text-box">
+                        <h3 class="slider-slogan">Inquiry</h3>
+                        <p class="slider-time">Ho Chi Minh City, 11th October 2024.</p>
+                        <button class="slider-btn"><a href="./inquiry.html">contact us</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="input-section gallery-section grid-8-cols">
+                    <h3 class="section-title">Get in touch.</h3>
+                    <form>
+                        <div class="inp__container">
+                            <label class="lable__inp" for="inp-name">full name</label>
+                            <input class="inp" type="text" id="inp-name" />
+                        </div>
+
+                        <div class="inp__container">
+                            <label class="lable__inp" for="inp-email">email address</label>
+                            <input class="inp" type="email" id="inp-email" />
+                        </div>
+
+                        <div class="inp__container" style="display: flex">
+                            <label class="lable__inp" for="inp-event">interested event</label>
+                            <select id="inp-event" style="margin-left: 20px">
+                                <option value="Ho Chi Minh Charity Run 2024">Ho Chi Minh Charity Run 2024</option>
+                            </select>
+                        </div>
+
+                        <div class="inp__container" style="display: flex">
+                            <label class="lable__inp">category of enquiry:</label>
+                            <div style="margin-left: 20px">
+                                <div style="display: flex; justify-content: start; align-items: center">
+                                    <input
+                                        class="categoryOfEnquiry"
+                                        name="categoryOfEnquiry"
+                                        type="checkbox"
+                                        style="margin-right: 10px"
+                                    />
+                                    <label class="lable__inp">to join</label>
+                                </div>
+                                <div style="display: flex; justify-content: start; align-items: center">
+                                    <input
+                                        class="categoryOfEnquiry"
+                                        name="categoryOfEnquiry"
+                                        type="checkbox"
+                                        style="margin-right: 10px"
+                                    />
+                                    <label class="lable__inp">event activities</label>
+                                </div>
+                                <div style="display: flex; justify-content: start; align-items: center">
+                                    <input
+                                        class="categoryOfEnquiry"
+                                        name="categoryOfEnquiry"
+                                        type="checkbox"
+                                        style="margin-right: 10px"
+                                    />
+                                    <label class="lable__inp">Registration fees</label>
+                                </div>
+                                <div style="display: flex; justify-content: start; align-items: center">
+                                    <input
+                                        class="categoryOfEnquiry"
+                                        name="categoryOfEnquiry"
+                                        type="checkbox"
+                                        style="margin-right: 10px"
+                                    />
+                                    <label class="lable__inp">Rules & Guidelines</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inp__container">
+                            <label class="lable__inp" for="inp-enquiry">detailed Enquiry</label>
+                            <textarea
+                                placeholder="Type here..."
+                                class="inp-comment"
+                                name=""
+                                id="inp-enquiry"
+                            ></textarea>
+                        </div>
+                        <div
+                            class="inp__container"
+                            style="display: flex; width: 100%; justify-content: center; align-items: center; gap: 40px"
+                        >
+                            <input class="inp__section-btn" type="reset" id="formCancelBtn" value="Cancel" />
+                            <input class="inp__section-btn" type="button" id="formSubmitBtn" value="Submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="toast" class="toastContainer">
+                <h3>Congratulation!!!</h3>
+                <label>Name:</label>
+                <span id="toastName"></span>
+                <br />
+
+                <label>Email:</label>
+                <span id="toastEmail"></span>
+                <br />
+
+                <label>Interested Event:</label>
+                <span id="toastEvent"></span>
+                <br />
+                <div style="display: flex">
+                    <label>Category of Enquiry:</label>
+                    <div style="margin-left: 20px">
+                        <div style="display: flex; justify-content: start; align-items: center">
+                            <input
+                                class="toastCategoryOfEnquiry"
+                                name="toastCategoryOfEnquiry"
+                                type="checkbox"
+                                disabled
+                                style="margin-right: 10px"
+                            />
+                            <label class="lable__inp" style="color: black">to join</label>
+                        </div>
+                        <div style="display: flex; justify-content: start; align-items: center">
+                            <input
+                                class="toastCategoryOfEnquiry"
+                                name="toastCategoryOfEnquiry"
+                                type="checkbox"
+                                disabled
+                                style="margin-right: 10px"
+                            />
+                            <label class="lable__inp" style="color: black">event activities</label>
+                        </div>
+                        <div style="display: flex; justify-content: start; align-items: center">
+                            <input
+                                class="toastCategoryOfEnquiry"
+                                name="toastCategoryOfEnquiry"
+                                type="checkbox"
+                                disabled
+                                style="margin-right: 10px"
+                            />
+                            <label class="lable__inp" style="color: black">Registration fees</label>
+                        </div>
+                        <div style="display: flex; justify-content: start; align-items: center">
+                            <input
+                                class="toastCategoryOfEnquiry"
+                                name="toastCategoryOfEnquiry"
+                                type="checkbox"
+                                disabled
+                                style="margin-right: 10px"
+                            />
+                            <label class="lable__inp" style="color: black">Rules & Guidelines</label>
+                        </div>
+                    </div>
+                </div>
+                <br />
+
+                <label>Detailed Enquiry:</label>
+                <span id="toastEnquiry"></span>
+                <br />
+            </div>
+            <footer class="footer">
+                <div class="footer__container grid-4-cols">
+                    <h3 class="section-title">Contact info.</h3>
+                    <p class="footer__ex-email">info@hcmcharityrun2024.com</p>
+                    <p class="footer__ex-phone-number">+84 123 456 789</p>
+                    <ul class="footer__social--nav grid-row">
+                        <li class="footer__social--nav--items">
+                            <a href="" class="footer__social--nav--items--link">
+                                <i class="footer__icon uil uil-facebook-f"></i>
+                            </a>
+                        </li>
+
+                        <li class="footer__social--nav--items">
+                            <a href="" class="footer__social--nav--items--link">
+                                <i class="footer__icon uil uil-twitter"></i>
+                            </a>
+                        </li>
+
+                        <li class="footer__social--nav--items">
+                            <a href="" class="footer__social--nav--items--link">
+                                <i class="footer__icon uil uil-instagram-alt"></i>
+                            </a>
+                        </li>
+
+                        <li class="footer__social--nav--items">
+                            <a href="" class="footer__social--nav--items--link">
+                                <i class="footer__icon uil uil-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script src="./js/main.js"></script>
+    <script src="./js/form.js"></script>
+</html>

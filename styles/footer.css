@@ -1,0 +1,50 @@
+.footer {
+    margin-top: 60px;
+    padding: 10px 0;
+    background-color: var(--bg-color--);
+}
+
+.footer__container {
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+.footer__ex-email {
+}
+
+.footer__icon,
+.footer__ex-phone-number,
+.footer__ex-email {
+    font-size: 2.8rem;
+    margin: 10px 0;
+    color: var(--black-color--);
+    user-select: none;
+}
+
+.footer__ex-phone-number {
+    letter-spacing: -2px;
+}
+
+.footer__social--nav {
+    justify-content: space-evenly;
+}
+
+.footer__social--nav--items {
+}
+
+.footer__social--nav--items--link {
+}
+
+.footer__icon {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 576px) {
+    .footer__icon,
+    .footer__ex-phone-number,
+    .footer__ex-email {
+        font-size: 2.2rem;
+    }
+}
